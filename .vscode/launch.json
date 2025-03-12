@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run gate", // 配置名称
+            "type": "go", // 调试器类型，Go 项目使用 "go"
+            "request": "launch", // 启动模式
+            "mode": "exec", // 执行模式，用于运行已编译的可执行文件
+            "program": "${workspaceFolder}/bin/due", // 可执行文件路径
+            "args": [ // 命令行参数
+                "-type", "gate",
+            ],
+            "cwd": "${workspaceFolder}/", // 工作目录
+            "preLaunchTask": "build" // 预启动任务，用于构建项目
+        },
+        {
+            "name": "Run login", // 配置名称
+            "type": "go", // 调试器类型，Go 项目使用 "go"
+            "request": "launch", // 启动模式
+            "mode": "exec", // 执行模式，用于运行已编译的可执行文件
+            "program": "${workspaceFolder}/bin/due", // 可执行文件路径
+            "args": [ // 命令行参数
+                "-type", "login",
+            ],
+            "cwd": "${workspaceFolder}/", // 工作目录
+            "preLaunchTask": "build" // 预启动任务，用于构建项目
+        }
+    ]
+}
