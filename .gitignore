@@ -1,2 +1,9 @@
-./log
-./run
+./log/
+*run/
+
+
+# executable files
+*.exe
+
+# log file
+*.log

@@ -1,1 +1,0 @@
-FATA[2025/03/13 17:26:03.134369] node.go:408 user locate event watch failed: dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
